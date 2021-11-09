@@ -16,5 +16,8 @@ class Post(models.Model):
     updated_on = models.DateTimeField(auto_now=True)
     post_status = models.IntegerField(choices=STATUS, default=0)
 
+    class Meta:
+        ordering = ['-created_on']
+
     def __str__(self):
         return self.title

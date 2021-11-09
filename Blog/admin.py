@@ -7,5 +7,4 @@ class PostAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Post, PostAdmin)
-
 admin.site.site_header = "Blog Control Panel"
