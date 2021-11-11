@@ -3,7 +3,7 @@ from .models import Newsletter
 
 
 class NewsletterAdmin(admin.ModelAdmin):
-    list_display = ('email', 'date')
+    list_display = ('user_email', 'date')
 
 
 admin.site.register(Newsletter, NewsletterAdmin)
