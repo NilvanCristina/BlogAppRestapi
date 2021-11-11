@@ -13,6 +13,7 @@ class Contact(models.Model):
     last_name = models.CharField(max_length=100, blank=False)
     email = models.EmailField(max_length=200, blank=False)
     subject = models.IntegerField(choices=SUBJECT, default=3)
+    message = models.TextField(default="")
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:
