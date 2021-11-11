@@ -10,8 +10,8 @@ class Newsletters(APIView):
 
     def get(self, request):
         newsletters = Newsletter.objects.all()
-
         serializer = NewsletterSerializer(newsletters, many=True)
+
         return Response(serializer.data)
 
     def post(self, request):
